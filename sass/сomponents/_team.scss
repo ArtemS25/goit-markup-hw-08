@@ -1,0 +1,28 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--grey-bgr-cl);
+}
+
+.container-team {
+  display: block;
+}
+
+.team__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.team__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.team-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
