@@ -1,7 +1,12 @@
 .content {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--light-txt-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container-content {
@@ -9,11 +14,31 @@
 }
 
 .content__items {
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
   gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  justify-content: start;
   list-style: none;
+
+  @media screen and (max-width: 767px) {
+    max-width: 326px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.content__list {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .content__button {
@@ -51,11 +76,21 @@
   flex-wrap: wrap;
   gap: 30px;
   list-style: none;
+  width: 100%;
+
+  // --items: 1;
+
+  // @media screen and (min-width: 768px) {
+  //   --items: 1;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   --items: 3;
+  // }
 }
 
 .content__file {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-
+  display: flex;
   transition: box-shadow var(--animation);
 
   &:hover,
@@ -67,8 +102,19 @@
   &:hover .overlays {
     transform: translateY(0);
   }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
+
+  @media screen and (min-width: 769px) {
+    --items: 2;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
 }
 
 .content__link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
 }

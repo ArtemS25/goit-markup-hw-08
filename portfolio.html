@@ -61,6 +61,16 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use href="./images/icons/icons.svg#menu-btn"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -79,13 +89,33 @@
             <li class="content__file">
               <a class="content__link" href="">
                 <div class="wrap-img">
-                  <img
-                    class="wrap-img__desc"
-                    src="./images/portfolio/img.jpg"
-                    alt="Зображення веб-сайту Технохряк на ноутбуці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x.jpg 1x,
+                        ./images/portfolio/img_lg-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x.jpg 1x,
+                        ./images/portfolio/img_md-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x.jpg 1x,
+                        ./images/portfolio/img_sm-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img_sm-@1x.jpg"
+                      alt="Зображення веб-сайту Технохряк на ноутбуці"
+                    />
+                  </picture>
                   <div class="overlays">
                     <p class="overlays__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -103,13 +133,33 @@
             <li class="content__file">
               <a class="content__link" href="">
                 <div class="wrap-img">
-                  <img
-                    class="wrap-img__desc"
-                    src="./images/portfolio/img-1.jpg"
-                    alt="Постер дизайну Новий Орлеан проти Золотих Зірок"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-1.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-1.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-1.jpg 1x,
+                        ./images/portfolio/img_md-@2x-1.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-1.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-1.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img_sm-@1x-1.jpg"
+                      alt="Постер дизайну Новий Орлеан проти Золотих Зірок"
+                    />
+                  </picture>
                   <div class="overlays">
                     <p class="overlays__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -129,13 +179,33 @@
             <li class="content__file">
               <a class="content__link" href="">
                 <div class="wrap-img">
-                  <img
-                    class="wrap-img__desc"
-                    src="./images/portfolio/img-2.jpg"
-                    alt="Зображення логотипу ресторану Морська їжа"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-2.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-2.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-2.jpg 1x,
+                        ./images/portfolio/img_md-@2x-2.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-2.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-2.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img_sm-@1x-2.jpg"
+                      alt="Зображення логотипу ресторану Морська їжа"
+                    />
+                  </picture>
                   <div class="overlays">
                     <p class="overlays__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -153,13 +223,33 @@
             <li class="content__file">
               <a class="content__link" href="">
                 <div class="wrap-img">
-                  <img
-                    class="wrap-img__desc"
-                    src="./images/portfolio/img-3.jpg"
-                    alt="Зображення навушників Проєкт Прайм"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-3.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-3.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-3.jpg 1x,
+                        ./images/portfolio/img_md-@2x-3.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-3.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-3.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img_sm-@1x-3.jpg"
+                      alt="Зображення навушників Проєкт Прайм"
+                    />
+                  </picture>
                   <div class="overlays">
                     <p class="overlays__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -177,13 +267,33 @@
             <li class="content__file">
               <a class="content__link" href="">
                 <div class="wrap-img">
-                  <img
-                    class="wrap-img__desc"
-                    src="./images/portfolio/img-4.jpg"
-                    alt="Зображення двох коробок проєкт боксес"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-4.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-4.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-4.jpg 1x,
+                        ./images/portfolio/img_md-@2x-4.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-4.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-4.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img_sm-@1x-4.jpg"
+                      alt="Зображення двох коробок проєкт боксес"
+                    />
+                  </picture>
                   <div class="overlays">
                     <p class="overlays__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -201,13 +311,33 @@
             <li class="content__file">
               <a class="content__link" href="">
                 <div class="wrap-img">
-                  <img
-                    class="wrap-img__desc"
-                    src="./images/portfolio/img-5.jpg"
-                    alt="Сайту натхнення без кордонів на екрані комп'ютера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-5.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-5.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-5.jpg 1x,
+                        ./images/portfolio/img_md-@2x-5.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-5.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-5.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img_sm-@1x-5.jpg"
+                      alt="Сайту натхнення без кордонів на екрані комп'ютера"
+                    />
+                  </picture>
                   <div class="overlays">
                     <p class="overlays__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -227,13 +357,30 @@
             <li class="content__file">
               <a class="content__link" href="">
                 <div class="wrap-img">
-                  <img
-                    class="wrap-img__desc"
-                    src="./images/portfolio/img-6.jpg"
-                    alt="Дизайн паперового журналу"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-6.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-6.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-6.jpg 1x,
+                        ./images/portfolio/img_md-@2x-6.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-6.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-6.jpg 2x
+                      "
+                    />
+                    <img src="./images/portfolio/img_sm-@1x-6.jpg" alt="изайн паперового журналу" />
+                  </picture>
                   <div class="overlays">
                     <p class="overlays__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -253,13 +400,33 @@
             <li class="content__file">
               <a class="content__link" href="">
                 <div class="wrap-img">
-                  <img
-                    class="wrap-img__desc"
-                    src="./images/portfolio/img-7.jpg"
-                    alt="Паперовий брелок проєкт лаб"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-7.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-7.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-7.jpg 1x,
+                        ./images/portfolio/img_md-@2x-7.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-7.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-7.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img_sm-@1x-7.jpg"
+                      alt="Паперовий брелок проєкт лаб"
+                    />
+                  </picture>
                   <div class="overlays">
                     <p class="overlays__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -277,13 +444,33 @@
             <li class="content__file">
               <a class="content__link" href="">
                 <div class="wrap-img">
-                  <img
-                    class="wrap-img__desc"
-                    src="./images/portfolio/img-8.jpg"
-                    alt="чоловік працює на ноутбуці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-8.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-8.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-8.jpg 1x,
+                        ./images/portfolio/img_md-@2x-8.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-8.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-8.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img_sm-@1x-8.jpg"
+                      alt="Чоловік працює на ноутбуці"
+                    />
+                  </picture>
                   <div class="overlays">
                     <p class="overlays__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -391,27 +578,113 @@
               </li>
             </ul>
           </div>
-          <form class="footer-form" autocomplete="off" novalidate>
-            <label class="footer-form__label">Підпишіться на розсилку</label>
-            <div class="footer-container">
-              <input
-                class="footer-container__input"
-                type="email"
-                name="mail"
-                required
-                minlength="3"
-                placeholder="E-mail"
-              />
-              <button class="footer-btn" type="submit">
-                <span class="footer-btn__title">Підписатися</span>
-                <svg class="footer-btn__icon" width="24" height="24">
-                  <use href="images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
         </div>
+        <form class="footer-form" autocomplete="off" novalidate>
+          <label class="footer-form__label">Підпишіться на розсилку</label>
+          <div class="footer-container">
+            <input
+              class="footer-container__input"
+              type="email"
+              name="mail"
+              required
+              minlength="3"
+              placeholder="E-mail"
+            />
+            <button class="footer-btn" type="submit">
+              <span class="footer-btn__title">Підписатися</span>
+              <svg class="footer-btn__icon" width="24" height="24">
+                <use href="images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
+      <!-- Мобільне меню -->
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-btn menu-btn--positioning js-close-menu" type="button">
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use href="./images/icons/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link mobile-nav__link">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link mobile-nav__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__link"> +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts__link mobile-contacts__link--mail"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-socials">
+          <li>
+            <a
+              href="https://www.instagram.com"
+              class="mobile-socials__link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com"
+              class="mobile-socials__link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com"
+              class="mobile-socials__link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com"
+              class="mobile-socials__link mobile-socials__link--not_after"
+              target="_blank"
+              rel="noreferrer noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/mobile-menu.js"></script>
     </footer>
   </body>
 </html>

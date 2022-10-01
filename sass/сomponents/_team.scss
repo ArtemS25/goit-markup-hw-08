@@ -1,11 +1,12 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--grey-bgr-cl);
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-.container-team {
-  display: block;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
@@ -16,12 +17,21 @@
 }
 
 .team__list {
-  display: flex;
-  gap: 30px;
   list-style: none;
+  display: flex;
+  text-align: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.team-img {
+.team__item {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+}
+
+.team__img {
   display: block;
   max-width: 100%;
   height: auto;

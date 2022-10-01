@@ -1,6 +1,10 @@
 .group {
   padding-bottom: 94px;
   display: block;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .group__title {
