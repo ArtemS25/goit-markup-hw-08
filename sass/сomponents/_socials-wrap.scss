@@ -1,18 +1,10 @@
 .socials-wrap {
-  padding-left: 122px;
-  padding-right: 122px;
   padding-top: 30px;
-  padding-bottom: 24px;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 74px;
-    padding-right: 74px;
-  }
+  padding-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 30px;
   }
 
   background-color: var(--light-txt-cl);
