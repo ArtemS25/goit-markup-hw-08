@@ -7,23 +7,24 @@
 .container-footer {
   @media screen and (min-width: 1200px) {
     display: flex;
-    gap: 70px;
+    margin-left: auto;
     align-items: baseline;
   }
 }
 
 .footer-content {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
-    gap: 70px;
+    margin-left: auto;
     align-items: baseline;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    justify-content: space-between;
-
-    margin-left: 76px;
-    margin-right: 89px;
+    justify-content: space-around;
     margin-bottom: 60px;
   }
 }
@@ -89,10 +90,6 @@
 /* Socials */
 
 .footer-socials {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
-
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
