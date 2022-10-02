@@ -7,19 +7,19 @@
 .container-footer {
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
     align-items: baseline;
+    gap: 114px;
   }
 }
 
 .footer-content {
+  gap: 70px;
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: auto;
     align-items: baseline;
   }
 
@@ -136,8 +136,6 @@
 /* Form */
 
 .footer-form {
-  margin-left: auto;
-
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
